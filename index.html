@@ -6,27 +6,61 @@
 
   <!-- 카카오 SDK 불러오기 -->
   <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
     body {
-      font-family: sans-serif;
+      font-family: 'Jua', sans-serif;
+      background: linear-gradient(135deg, #ffe6f0, #e6f0ff);
+      color: #ff0080;
       text-align: center;
-      margin-top: 100px;
+      padding-top: 100px;
+      animation: fadeIn 2s ease-in;
     }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0.2em;
+      color: #ff1493;
+    }
+
     p {
-        color: rgb(255, 0, 234);
+      font-size: 1.5em;
+      margin-top: 0;
+      animation: pop 1s ease-in-out infinite alternate;
+    }
+
+    img {
+      margin-top: 30px;
+      width: 500px;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(255, 0, 128, 0.3);
+      animation: float 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes float {
+      from { transform: translateY(0); }
+      to { transform: translateY(-10px); }
+    }
+
+    @keyframes pop {
+      from { transform: scale(1); }
+      to { transform: scale(1.05); }
     }
   </style>
 </head>
 <body>
 
   <h1>제 소원은 말이죠...</h1>
-  <p>
-    당신과의 진한 뽀뽀... ㅎㅎ
-  </p>
-  <img src="zzang.gif">
-
-
-  
+  <p>당신과의 진한 뽀뽀... ㅎㅎ 💋</p>
+  <img src="zzang.gif" alt="귀여운 이미지">
 
 </body>
 </html>
